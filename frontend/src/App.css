@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.matrix-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.row-container {
+  display: flex;
+  gap: 10px;
+}
+
+.row-container:nth-child(1) {
+  flex-direction: row;
+}
+
+.row-container:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.grid-cell {
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  height: auto;
+}
+
+.grid-cell:hover {
+  background-color: #dcdcdc;
+}
+
+.cell-A1 {
+  background-color: red;
+}
+
+.cell-A2 {
+  background-color: green;
+}
+
+.cell-A3 {
+  background-color: yellow;
+}
+
+.cell-A4 {
+  background-color: blue;
+}
