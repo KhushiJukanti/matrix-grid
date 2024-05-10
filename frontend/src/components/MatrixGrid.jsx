@@ -34,7 +34,7 @@ const MatrixGrid = () => {
 
     const saveToDatabase = async (field, value, grid) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/matrix', { [field]: value, Grid: grid });
+            const response = await axios.post('https://matrix-grid.onrender.com/api/matrix', { [field]: value, Grid: grid });
             console.log(response.data); // Log the response from the backend
         } catch (error) {
             console.error('Error saving to database:', error);
