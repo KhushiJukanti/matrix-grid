@@ -8,7 +8,17 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB (you'll need to set up your own MongoDB database)
-mongoose.connect('mongodb://localhost:27017/myapp');
+// khushiJ
+// C6PEyD7hiAJcIGoj
+
+// mongodb+srv://khushijukanti:<password>@cluster0.ngvjbli.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongoose.connect('mongodb+srv://khushiJ:C6PEyD7hiAJcIGoj@cluster0.xomvsov.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/Matrix').then(() => {
+    console.log("Connected to MongoDB");
+})
+
+// mongoose.connect('mongodb://localhost:27017/myapp').then(() => {
+//     console.log("Connected to MongoDB");
+// })
 
 const matrixSchema = new mongoose.Schema({
     Name: String,
