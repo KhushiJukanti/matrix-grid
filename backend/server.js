@@ -36,14 +36,14 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // API endpoint to fetch matrix data
-app.get('/api/matrix', async (req, res) => {
-    try {
-        const matrixData = await MatrixModel.find();
-        res.json(matrixData);
-    } catch (error) {
-        res.status(500).json({ error: 'Error fetching matrix data' });
-    }
-});
+// app.get('/api/matrix', async (req, res) => {
+//     try {
+//         const matrixData = await MatrixModel.find();
+//         res.json(matrixData);
+//     } catch (error) {
+//         res.status(500).json({ error: 'Error fetching matrix data' });
+//     }
+// });
 
 
 
